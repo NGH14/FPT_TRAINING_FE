@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FPT INTERNAL TRAINING</title>
+    <link
+      rel="icon"
+      href="https://fpt.com.vn/Content/home/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/wwwroot/css/resetcss.css" />
+
+    <link rel="stylesheet" href="/wwwroot/css/site.css" />
+    <link rel="stylesheet" href="/wwwroot/css/site2.css" />
+
+    <link rel="stylesheet" href="/wwwroot/css/line.css" />
+    <link rel="stylesheet" href="/wwwroot/css/darkmode.css" />
+    <link rel="stylesheet" href="/wwwroot/css/GoTopButton.css" />
+    <link rel="stylesheet" href="/wwwroot/css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="
+          navbar navbar-expand-sm navbar-toggleable-sm navbar-light
+          bg-white
+        "
+      >
+        <div class="container">
+          <a
+            class="navbar-brand"
+            asp-area=""
+            asp-controller="Home"
+            asp-action="Index"
+          >
+            <img
+              src="https://fpt.com.vn/Content/home/images/icon/ic-logo.png"
+              alt="FPTlogo"
+              width="150"
+              height="90"
+            />
+          </a>
+          <a
+            class="navbar-brand"
+            asp-area=""
+            asp-controller="Home"
+            asp-action="Index"
+          ></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="
+              navbar-collapse
+              collapse
+              d-sm-inline-flex
+              flex-sm-row-reverse
+            "
+          >
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-item">
+                <a class="btn btn-primary" href="login_page.html">Log In</a>
+              </li>
+              <li class="nav-item ml-1">
+                <span class="nav-link text-dark char"> / </span>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark"
+                  asp-area=""
+                  asp-controller="Home"
+                  asp-action="Privacy"
+                  >Register</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="training_page.html"
+                  >Training</a
+                >
+              </li>
+
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  data-toggle="dropdown"
+                  class="nav-item nav-link dropdown-toggle"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-gear-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+                    />
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <form>
+                    <div
+                      class="theme-switch-wrapper"
+                      style="position: unset; top: auto; right: auto"
+                    >
+                      <span> Dark Mode: </span>
+                      <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+
+                        <div class="slider round"></div>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <img
+        class="hide-over"
+        style="
+          width: 100%;
+          max-height: 300px;
+          object-fit: cover;
+          box-shadow: 0 0 15px var(--title-color);
+        "
+        src="https://fpt.com.vn/Images/images/banner/Ve-FPT/ve-FPT.png"
+        alt=""
+      />
+    </header>
+    <div class="container">
+      <main role="main" class="pb-3">
+        <a href="#top"> </a>
+
+        <div class="text-left">
+          <h1 class="display-4">Focus on objectives</h1>
+
+          <h2 class="display-5 text-left" localize-content>
+            Training Information
+          </h2>
+          <table class="table table-borderless table-hover">
+            <tr>
+              <th style="text-transform: uppercase; max-width: 15px">
+                <strong localize-content>Trainer </strong>
+              </th>
+              <td style="max-width: 100px">Vu Huu Nghia</td>
+            </tr>
+            <tr>
+              <th style="text-transform: uppercase; max-width: 15px">
+                <strong localize-content>Types </strong>
+              </th>
+              <td style="max-width: 100px">Offine</td>
+            </tr>
+            <tr>
+              <th style="text-transform: uppercase; max-width: 15px">
+                <strong localize-content>Address </strong>
+              </th>
+              <td style="max-width: 100px">
+                Apartment No.3 - Truong Sa Street - Ward 2 - Phu NHuan District
+                - Ho Chi Minh City
+              </td>
+            </tr>
+            <tr>
+              <th style="text-transform: uppercase; max-width: 15px">
+                <strong localize-content>Start </strong>
+              </th>
+              <td style="max-width: 100px">1/10/2021</td>
+            </tr>
+            <tr>
+              <th style="text-transform: uppercase; max-width: 15px">
+                <strong localize-content>End </strong>
+              </th>
+              <td style="max-width: 100px">1/10/2022</td>
+            </tr>
+          </table>
+
+          <hr />
+
+          <h2 class="display-5 text-left" localize-content>
+            Training Description
+          </h2>
+
+          <p>
+            Improving your presentation skills is important because the more
+            memorable, impactful, and effective your presentations are, the more
+            both you and your audience will get out of the learning and sharing
+            experience of a meeting, lecture, or workshop (or whatever else your
+            presentation is for). <br />
+            Cải thiện kỹ năng thuyết trình của bạn là rất quan trọng bởi vì bài
+            thuyết trình của bạn càng đáng nhớ, có tác động và hiệu quả, thì cả
+            bạn và khán giả của bạn sẽ càng nhận được nhiều kinh nghiệm học tập
+            và chia sẻ của một cuộc họp, bài giảng hoặc hội thảo (hoặc bất kỳ
+            điều gì khác mà bài thuyết trình của bạn
+          </p>
+
+          <hr />
+
+          <h2 class="display-5 text-left" localize-content>Training Detail</h2>
+          <p>
+            You should make a presentation with the following objective: To
+            share some information To teach something. For fun.To explain and
+            solve a problem. Cannot focus continuously for a long period of
+            time. It is recommended that you divide it into small parts and each
+            section is about 15 minutes. You should also have a discussion,
+            question or short activity in between the speeches.
+            <br />
+            Mục tiêu bài thuyết trình của bạn nên là một trong những ý sau: Để
+            chia sẻ một số thông tin Để dạy một điều gì đó. Để giải trí.Để giải
+            thích và giải quyết một vấn đề Điều quan trọng nhất là khán giả của
+            bạn nghe được những gì, vì vậy,bạn phải cân nhắc cẩn thận bạn nên
+            nói những gì và bạn nên nói như thế nào.Mọi người không thể liên tục
+            tập trung trong một khoảng thời gian dài.Bạn nên chia ra những phần
+            nhỏ và mỗi phần khoảng 15 phút.Bạn cũng nên có phần thảo luận, câu
+            hỏi hoặc hoạt động ngắn giữa những đoạn nói đó
+          </p>
+
+          <p style="font-size: 16px">
+            <strong
+              ><localize>Contact to get more information</localize></strong
+            >
+            <br />
+            <a href="https://fpt.com.vn/en/about-us/member-companies" title="">
+              <localize>FPT Training Corporation</localize></a
+            >
+          </p>
+        </div>
+
+        <hr />
+
+        <div></div>
+        <div></div>
+
+        <div class="gap-100"></div>
+        <div></div>
+        <div></div>
+
+        <div class="text-center">
+          <img
+            style="
+              margin: 0 -17px -15px 0;
+              vertical-align: middle;
+              border-style: none;
+              height: 135px;
+              width: 85px;
+              object-fit: cover;
+              overflow: hidden;
+              object-position: left;
+            "
+            src="https://fpt.com.vn/Content/home/images/canvas/cv-20.png"
+            alt=""
+          />
+          <img
+            style="
+              margin: -10px;
+              vertical-align: middle;
+              border-style: none;
+              height: 125px;
+              width: 105px;
+              object-fit: cover;
+              overflow: hidden;
+              object-position: center;
+            "
+            class="fpt-charac"
+            src="https://fpt.com.vn/Content/home/images/canvas/cv-21.png"
+            alt=""
+          />
+          <img
+            style="
+              margin: 20px -20px 0-30px;
+              vertical-align: middle;
+              border-style: none;
+              height: 150px;
+              width: 110px;
+              object-fit: cover;
+              overflow: hidden;
+              object-position: right;
+            "
+            class="fpt-charac"
+            src="https://fpt.com.vn/Content/home/images/canvas/cv-22.png"
+            alt=""
+          />
+        </div>
+
+        <button class="scrollToTopBtn">^</button>
+      </main>
+    </div>
+
+    <footer class="footer text-muted">
+      <div class="container">
+        &copy; 2021 - FPTTRAINING - FROM VUHUUNGHIA WITH LOVE
+      </div>
+    </footer>
+    <script src="/wwwroot/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/wwwroot/js/site.js" asp-append-version="true"></script>
+    <script src="/wwwroot/js/GoTopButton.js" asp-append-version="true"></script>
+  </body>
+</html>
